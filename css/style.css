@@ -1,0 +1,295 @@
+/* Styles pour la navigation */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+/* Style pour le logo */
+.logo {
+    margin-right: auto;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+/* Liste de navigation */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 40px;
+}
+
+/* Liens de navigation */
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 15px 25px;
+    white-space: nowrap;
+}
+
+/* Effet hover pour les liens */
+nav ul li a:hover {
+    color: #008f24;
+}
+
+/* Section des catégories de produits */
+.product-categories {
+    padding: 40px 20px;
+    background-color: #f5f5f5;
+}
+
+.product-categories h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Conteneur des catégories */
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Style pour chaque catégorie */
+.category {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    width: 200px;
+}
+
+.category img {
+    width: 100%;
+    height: auto;
+}
+
+.category h3 {
+    padding: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Style pour le lien */
+.category a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Liste des produits */
+.product-list {
+    padding: 40px 20px;
+}
+
+.product-list h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Conteneur des produits */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Style pour chaque produit */
+.product {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    min-height: 400px; /* Hauteur minimale pour que toutes les cartes aient la même taille */
+}
+
+/* Conteneur pour l'image */
+.product .image-container {
+    width: 100%;
+    height: 200px; /* Hauteur uniforme pour le conteneur de l'image */
+    overflow: hidden; /* Cache l'excès d'image */
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centre l'image dans le conteneur */
+}
+
+/* Style pour les images */
+.product img {
+    width: auto;
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover; /* Maintient les proportions de l'image sans déformation */
+}
+
+
+ /* Global CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* La page occupe toute la hauteur de la fenêtre */
+    scroll-behavior: smooth;
+
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* S'assure que le wrapper couvre toute la hauteur de l'écran */
+}
+
+main {
+    flex: 1; /* Le contenu principal prend tout l'espace restant */
+    padding-bottom: 20px; /* Optionnel : espace avant le footer */
+    margin: 0;
+    padding: 0;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 0px 0;
+    text-align: center;
+    margin-top: auto; /* Positionne le footer en bas de la page */
+    width: 100%; /* S'assure que le footer prend toute la largeur */
+    position: relative; /* Permet de bien le positionner */
+    bottom: -240px; /* Le colle au bas de la page */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+}
+
+/* Réseaux sociaux */
+.social-media ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10px; /* Espacement entre les icônes */
+}
+
+.social-media ul li a img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Copyright */
+.copyright p {
+    font-size: 12px;
+    color: #bbb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Style des sections */
+section {
+    padding: 60px 20px; /* Assure un espace suffisant autour des sections */
+    margin-bottom: 50px; /* Espacement entre les sections */
+    margin-top: 50px;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px; /* Ajuste ce padding selon tes besoins */
+    border: none;
+
+}
+
+section:nth-child(odd) {
+    background-color: #e4e4e4;
+}
+
+/* Pour que les sections soient clairement séparées */
+section {
+    min-height: 400px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+ 
+/* Assure-toi que les sections ont un espace suffisant pour le défilement */
+section {
+  padding: 60px 0; /* Ajuste selon tes besoins */
+  scroll-margin-top: 70px; /* Assure que la section ne se retrouve pas sous la barre de navigation */
+}
+
+/* Optionnel : Ajouter du style aux ancres */
+a {
+  text-decoration: none; /* Enlève le soulignement des liens */
+  color: #007BFF; /* Couleur des liens */
+}
+
+/* Optionnel : Ajouter un style lorsque les liens sont survolés */
+a:hover {
+  text-decoration: underline;
+}
+
+/* Assure-toi que la navigation est visible et fonctionnelle */
+header nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff; /* Assure une bonne visibilité */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Légère ombre pour le contraste */
+  z-index: 1000; /* Assure que la navigation est au-dessus du contenu */
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center; /* Centre les liens dans la barre de navigation */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  margin: 0 15px; /* Espacement entre les éléments du menu */
+}
+
+header nav ul li a {
+  color: #333;
+  font-weight: bold;
+}
+
+html {
+  scroll-behavior: smooth; /* Ajoute un défilement fluide pour les ancres */
+}
